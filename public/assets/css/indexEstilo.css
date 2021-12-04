@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gobierno{
+  margin-bottom:60px;
+  margin-left:50px;
+  
+}
+.senalogo img{
+  width:150px;
+  float:left;
+  border-right: 5px solid black;
+
+}
+.logo img{
+  width:250px;
+  margin-top:50px;
+  margin-left: 10px;
+}
+.gobiernom{
+  width:450px;
+  margin-top:0px;
+  position:relative;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#FA6A30;
+  position: relative;
+}
+.topnav a {
+  color: white;
+  padding: 24px 100px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+.topnav a:hover {
+  background-color:white;
+  color: black;
+  }
+
+.contenido{
+  margin-top:25px;
+  margin-left:100px;
+  padding: 3px;
+  width: 1500px;
+  height: 850px;
+  float: left;
+  background:transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+h1{
+  margin: auto;
+  margin-bottom: 20px;
+  background:transparent;
+  border-bottom: 4px solid #FC7122; 
+  width: 950px;
+ }
+h1{
+  font-size: 55px;
+  text-align: center;
+  color: black;
+ }
+
+.articulos{
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background: white; 
+ }
+ .articulos h2{
+  font-size: 35px;
+  text-align: center;
+  text-decoration:none;
+  color: black; 
+ }
+.articulos p{
+  font-size: 23px;
+  text-align: left;
+  text-decoration:none;
+  color: black; 
+  margin-left:15px;
+
+}
+.articulos p a{
+  text-decoration:none;
+  color: black;
+}
+
+.articulos a{
+  text-decoration:none;
+  color: black;
+}

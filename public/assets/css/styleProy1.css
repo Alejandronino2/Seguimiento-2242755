@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+*{
+	margin: 0;
+	border: 0;
+	padding: 0; 
+}
+
+body{
+ 	background-color: #FAFAF4;
+ 	font-family: 'Heebo', sans-serif;
+}
+
+header {
+	background-color:#f9a826;
+	width: 100px;
+	position: fixed;
+	height: 1000px;
+}
+
+header img{
+	max-width: 50px;
+	width: 100%;
+	margin: 30px 22px 20px 22px;
+}
+nav ul{
+  text-align:center;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+nav ul li i{
+  color:black;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 22px 4px 25px;
+    text-decoration:none;
+  
+}
+
+nav ul li i:hover{
+  background-color:#f9a826;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 25px 4px 25px;
+}
+
+.icon{
+	margin-top: 170px
+}
+
+#boton{
+	padding: 25px 95px 25px 195px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#boton h1{
+	padding-left: 30px;
+	color:#686876;
+}
+
+.botones i{
+	color:black;
+    font-size: 17px;
+    padding: 25px;
+    text-decoration:none;
+    background-color: #FAFAF4;
+}
+.ico{
+	display: flex;
+	flex-direction: row;
+}
+
+.ico button a{
+	font-size: 20px;
+	font-weight: bolder;
+	color: #21212F;
+	padding: 10px;
+	align-items: center;
+}
+.contenido{
+  width: 1740px;
+  height: 850px;
+}
+.contenido{
+  margin-left:120px;
+  margin-top: 15px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+ }
+ .articulos{
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: white; 
+ }
+ .articulos h2{
+  font-size: 35px;
+  text-align:center;
+  text-decoration:none;
+  color: black; 
+ }
+.articulos p{
+  font-size:20px;
+  text-decoration:none;
+  color: black;
+}
+.articulos p a{
+  text-decoration:none;
+  color: black;
+}
+
+.articulos a{
+  text-decoration:none;
+  color: black;
+}
+table {
+  margin:0px;
+  padding:0px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left:30px;
+}
+
+table td, table th {
+  border: 2px solid black;
+  padding: 2px;
+  margin: -2px;
+  font-size:15px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: white;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f9a826;
+  color: white;
+}
+-----------------------
+form{ 
+  background-color:white;
+  border-radius: 3px;
+  color: #999;
+  font-size: 0.8em;
+  padding: 20px;
+  margin: 0 auto;
+  width: 300px;
+  margin-left: 140px;
+} 
+input{
+  border: 0;
+  outline: none;    
+  width: 290px;
+}
+.formulario{
+  border: solid 1px #ccc;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+} 
+.formulario:focus{
+  border-color: #27ef0e;
+}
+
+.center-content{
+text-align: center;
+}
+.btn{
+  padding-top: 15px;
+  margin-top: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+.btn-green{
+  color: white;
+  background-color: #f9a826;
+}
+.btn-green:hover{
+  background-color: black;  
+}
+.btn-green:active{
+  background-color: gray;
+}
