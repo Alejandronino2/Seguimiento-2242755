@@ -30,8 +30,8 @@
                           <tr>
                             <td>{{ $evidencia->comentario }}</td>
                             <td>{{ $evidencia->fechaevidencia }}</td>
-                            <td><a href="{{ $evidencia->evidenciaAprendiz }}" class="btn btn-outline-primary" target="_blank">Ver evidencia</a></td>
-                            <td><a href="#" type="button" class="btn btn-primary btn-action mr-1" data-toggle="modal" title="Editar" data-target="#ModalEditarEvidencia{{ $evidencia->idEvidenciaAprendiz }}"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><a href="{{ $evidencia->evidenciaAprendiz }}" class="btn btn-success" target="_blank">Ver evidencia</a></td>
+                            <td><a href="#" type="button" class="btn btn-success" data-toggle="modal" title="Editar" data-target="#ModalEditarEvidencia{{ $evidencia->idEvidenciaAprendiz }}"><i class="fas fa-pencil-alt"></i></a></td>
                         </tr>
                         @endforeach
                         @endif

@@ -27,7 +27,7 @@
                         @else
                           @foreach ($result as $evidencia)
                           <tr>
-                            <td><a href="{{ $evidencia->evidenciaAprendiz }}" class="btn btn-outline-primary" target="_blank">Ver evidencia</a></td>
+                            <td><a href="{{ $evidencia->evidenciaAprendiz }}" class="btn btn-success" target="_blank">Ver evidencia</a></td>
                             <td>{{ $evidencia->comentario }}</td>
                             <td>{{ $evidencia->fechaevidencia }}</td>
                         </tr>

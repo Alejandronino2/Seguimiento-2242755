@@ -28,7 +28,7 @@
                               <td>{{ $evidencia->faseEvidencia }}</td>
                               <td>{{ $evidencia->fechaInicio }}</td>
                               <td>{{ $evidencia->fechaFin }}</td>
-                              <td><a class="btn btn-outline-primary" href="#" type="button" data-toggle="modal" data-target="#ModalSubirEvidencia{{ $evidencia->idEvidencia }}{{ $evidencia->idAprendiz }}">Subir Evidencia</a></td>
+                              <td><a class="btn btn-success" href="#" type="button" data-toggle="modal" data-target="#ModalSubirEvidencia{{ $evidencia->idEvidencia }}{{ $evidencia->idAprendiz }}">Subir Evidencia</a></td>
                          </tr>
                         @endforeach
                         </tbody>

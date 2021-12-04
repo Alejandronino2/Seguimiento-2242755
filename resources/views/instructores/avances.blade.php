@@ -9,12 +9,12 @@
                 <div class="card">
                   <div class="card-header">
                     <h4>Avances</h4>
-                    <a href="{{ url('/instructor/avances/PDF/'.$idEvidenciaFK.'/'.$idFichaFK) }}" class="btn btn-icon btn-dark" title="pdf"><i class="far fa-file"></i></a>
+                    <a href="{{ url('/instructor/avances/PDF/'.$idEvidenciaFK.'/'.$idFichaFK) }}" class="btn btn-info" title="pdf"><i class="far fa-file"></i></a>
                   </div>
 				  <div class="card-header">
                     <h4>Seleccione una evidencia</h4>
 					@foreach ($result[0] as $evidencia)
-	                <a type="button" class="btn btn-outline-primary mx-1" href="{{ url('/instructor/verAvancesFiltrados/'.$evidencia->idFicha.'/'.$evidencia->idEvidenciaFK) }}">{{ $evidencia->nombreEvidencia }}</a><br>
+	                <a type="button" class="btn btn-info" href="{{ url('/instructor/verAvancesFiltrados/'.$evidencia->idFicha.'/'.$evidencia->idEvidenciaFK) }}">{{ $evidencia->nombreEvidencia }}</a><br>
 	                @endforeach
                   </div>
                   <div class="card-body">

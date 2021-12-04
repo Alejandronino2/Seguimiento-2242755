@@ -57,7 +57,7 @@
                               @enderror
                         </div>
                         <div class="card-footer text-right">
-                            <button class="btn btn-primary mr-1" type="submit">Guardar</button></form>
+                            <button class="btn btn-success" type="submit">Guardar</button></form>
                             <button class="btn btn-secondary" type="reset">Reset</button>
                         </div>
                    </div>

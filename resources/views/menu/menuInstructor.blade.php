@@ -31,12 +31,7 @@
       <nav class="navbar navbar-expand-lg main-navbar sticky">
         <div class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
-									collapse-btn"> <i data-feather="align-justify"></i></a></li>
-            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                <i data-feather="maximize"></i>
-              </a></li>
-          </ul>
+           </ul>
         </div>
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown"
@@ -69,29 +64,27 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
-            <li class="dropdown">
-              <a href="{{ url('instructor/ficha') }}" class="nav-link"><i data-feather="monitor"></i><span>Fichas</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Evidencias</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{ url('instructor/evidencias/'.$ficha[0]->idFicha) }}">Lista Evidencias</a></li>
-               </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="file-plus"></i><span>Avances</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{ url('instructor/verAvances/'.$ficha[0]->idFicha) }}">Lista Avances</a></li>
-                <li><a class="nav-link" href="{{ url('instructor/avance/'.$ficha[0]->idFicha) }}">Crear Avances</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"></i><span>Proyectos</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{ url('instructor/proyectos/'.$ficha[0]->idFicha) }}">Proyectos</a></li>
-                <li><a class="nav-link" href="{{ url('instructor/crearProyectos/'.$ficha[0]->idFicha) }}">Crear Proyectos</a></li>
-              </ul>
-            </li>
+           
+            <h5 class="menu-toggle nav-link has-dropdown"><i data-feather="codesandbox"></i><span>Ficha</span></h5>
+     
+            <li><a class="nav-link" href="{{ url('instructor/ficha') }}">-Fichas</a></li>
+           
+           
+              <h5  class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Evidencias</span></h5>
+            
+                <li><a class="nav-link" href="{{ url('instructor/evidencias/'.$ficha[0]->idFicha) }}">-Lista Evidencias</a></li>
+           
+              <h5  class="menu-toggle nav-link has-dropdown"><i data-feather="file-text"></i><span>Avances</span></h5>
+             
+                <li><a class="nav-link" href="{{ url('instructor/verAvances/'.$ficha[0]->idFicha) }}">-Lista Avances</a></li>
+                <li><a class="nav-link" href="{{ url('instructor/avance/'.$ficha[0]->idFicha) }}">-Crear Avances</a></li>
+              
+          
+            <h5 class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Proyectos</span></h5>
+             <li><a class="nav-link" href="{{ url('instructor/proyectos/'.$ficha[0]->idFicha) }}">-Proyectos</a></li>
+                <li><a class="nav-link" href="{{ url('instructor/crearProyectos/'.$ficha[0]->idFicha) }}">-Crear Proyectos</a></li>
+     
+       
           </ul>
         </aside>
       </div>

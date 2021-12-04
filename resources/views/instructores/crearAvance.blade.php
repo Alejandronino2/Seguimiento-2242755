@@ -13,7 +13,7 @@
 				  <div class="card-header">
                     <h4>Seleccione una evidencia</h4>
 					@foreach ($result[0] as $evidencia)
-	                <a type="button" class="btn btn-outline-primary mx-1" href="{{ url('/instructor/avance/'.$evidencia->idFicha.'/'.$evidencia->idEvidenciaFK) }}">{{ $evidencia->nombreEvidencia }}</a><br>
+	                <a type="button" class="btn btn-info" href="{{ url('/instructor/avance/'.$evidencia->idFicha.'/'.$evidencia->idEvidenciaFK) }}">{{ $evidencia->nombreEvidencia }}</a><br>
 	                @endforeach
                   </div>
                   <div class="card-body">
@@ -40,7 +40,7 @@
                                         <td><label for="{{ $avance->nombreProyecto }}" class="form-label">{{ $avance->nombreProyecto }}</label></td>
                                   <input type="hidden" class="form-input" id="{{ $avance->evidenciaAprendiz }}" name="proyecto[]" value="{{ $avance->idProyectoFK }}">
                                         <td>
-                                            <a href="{{ $avance->evidenciaAprendiz }}" class="btn btn-outline-primary" target="_blank">Ver evidencia</a>
+                                            <a href="{{ $avance->evidenciaAprendiz }}" class="btn btn-info" target="_blank">Ver evidencia</a>
                                   <input type="hidden" class="form-input" id="{{ $avance->evidenciaAprendiz }}" name="evidencia[]" value="{{ $avance->idEvidenciaAprendiz }}">
                               </td>
                           <td>
@@ -63,7 +63,7 @@
 					  <div class="form-group row mb-4">
                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                             <div class="col-sm-12 col-md-0">
-                                <button class="btn btn-primary">Guardar</button>
+                                <button class="btn btn-success">Guardar</button>
                             </div>
                       </div>
 					  </form>

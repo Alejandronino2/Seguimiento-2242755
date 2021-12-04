@@ -26,7 +26,7 @@
                             <input type="email" class="form-control" id="email" name="email" value="{{ $result->email }}" required readonly>
                         </div>
                         <div class="card-footer text-right">
-                           <a href="#" class="btn btn-icon icon-left btn-primary" data-toggle="modal"  title="Editar" data-target="#ModalEditarPerfil{{$result->idUsuario}}"><i class="fas fa-pencil-alt"></i>Cambiar Contraseña</a>
+                           <a href="#" class="btn btn-success" data-toggle="modal"  title="Editar" data-target="#ModalEditarPerfil{{$result->idUsuario}}"><i class="fas fa-pencil-alt"></i>Cambiar Contraseña</a>
                         </div>
                    </div>
                   </div>

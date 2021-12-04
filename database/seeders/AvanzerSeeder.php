@@ -172,14 +172,14 @@ class AvanzerSeeder extends Seeder
 
         $user18=User::create([
             'idRolFK' => '4',
-            'email' => 'thuerfano@misena.edu.co,',
+            'email' => 'thuerfano@misena.edu.co',
             'password' => Hash::make('12345'),
             'estadoUsuario' => '1',
             ]);
         
         $user19=User::create([
             'idRolFK' => '4',
-            'email' => 'vmartinez323@misena.edu.co,',
+            'email' => 'vmartinez323@misena.edu.co',
             'password' => Hash::make('12345'),
             'estadoUsuario' => '1',
             ]);

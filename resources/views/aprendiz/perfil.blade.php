@@ -31,7 +31,7 @@
                             <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" value="{{ $perfil->nombreProyecto }}" required readonly>
                         </div>
                         <div class="card-footer text-right">
-                           <a href="#" class="btn btn-icon icon-left btn-primary" data-toggle="modal"  title="Editar" data-target="#ModalEditarPerfil{{$perfil->idUsuario}}"><i class="fas fa-pencil-alt"></i>Cambiar Contraseña</a>
+                           <a href="#" class="btn btn-success" data-toggle="modal"  title="Editar" data-target="#ModalEditarPerfil{{$perfil->idUsuario}}"><i class="fas fa-pencil-alt"></i>Cambiar Contraseña</a>
                         </div>
                    </div>
                   </div>
