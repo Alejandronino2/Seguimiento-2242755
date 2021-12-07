@@ -30,14 +30,7 @@
       <div class="navbar-bg"></div>
       <nav class="navbar navbar-expand-lg main-navbar sticky">
         <div class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
-									collapse-btn"> <i data-feather="align-justify"></i></a></li>
-            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                <i data-feather="maximize"></i>
-              </a></li>
-          </ul>
-        </div>
+          </div>
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown"
               class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="{{ asset('./assets/img/persona.jpg') }}"
@@ -67,9 +60,10 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
-            <li class="dropdown">
-              <a href="{{ url('instructor/ficha') }}" class="nav-link"><i data-feather="monitor"></i><span>Fichas</span></a>
-            </li>
+            
+            <h5 class="menu-toggle nav-link has-dropdown"><i data-feather="codesandbox"></i><span>Ficha</span></h5>
+              <li><a href="{{ url('instructor/ficha') }}" class="nav-link"><span>- Fichas</span></a>
+</li>
           </ul>
         </aside>
       </div>
@@ -77,23 +71,22 @@
 	  <div class="main-content">
 <section class="section">
 <div class="section-body">
-    <div class="row">
+<div class="row">
 			@foreach ($result as $ficha)
 			  <div class="col-xl-3 col-lg-6">
 			  <a href="{{ url('instructor/proyectos/'.$ficha->idFicha) }}">
                 <div class="card l-bg-orange">
                   <div class="card-statistic-3">
-                    <div class="card-icon card-icon-large"><i class="fa fa-briefcase"></i></div>
-                    <div class="card-content">
-                      <h4 class="card-title">Ficha: {{ $ficha->ficha }}</h4>
-                      <span>Fecha Inicio: {{ $ficha->fechaInicio }}</span><br>
-                      <span>Fecha Fin: {{ $ficha->fechaFin }}</span>
-                    </div>
+                   <div class="card-content">
+                     
+                   <class="nav-link"><i data-feather="codesandbox"></i><span><br>Ficha: {{ $ficha->ficha }}</span>
+                </div>
                   </div>
                 </div>
 				</a>
               </div>  
 			@endforeach
+    </div>
     </div>
 </div>
 </section>

@@ -13,7 +13,8 @@
 				  <div class="card-header">
                     <h4>Seleccione un trimestre</h4>
 					@foreach ($result[0] as $evidencia)
-	                <a type="button" class="btn btn-outline-primary mx-1" href="{{ url('/instructor/evidencias/trimestre/'.$evidencia->idFicha.'/'.$evidencia->trimestre) }}">{{ $evidencia->trimestre }}</a><br>
+          <br>
+	                <a type="button" class="btn btn-info" href="{{ url('/instructor/evidencias/trimestre/'.$evidencia->idFicha.'/'.$evidencia->trimestre) }}">{{ $evidencia->trimestre }}</a><br>
 	                @endforeach
                   </div>
                   <div class="card-body">
@@ -43,7 +44,7 @@
 							              <td>{{ $evidencia->faseEvidencia }}</td>
 							              <td>{{ $evidencia->fechaInicio }}</td>
 							              <td>{{ $evidencia->fechaFin }}</td>
-                            <td><a href="{{ $evidencia->evidenciaP }}" class="btn btn-outline-primary" target="_blank">Ir a la evidencia</a></td>
+                            <td><a href="{{ $evidencia->evidenciaP }}" class="btn btn-info" target="_blank">Ir a la evidencia</a></td>
                             @if ($evidencia->estadoEvidenciaFi === 0)
                               <td><a href="{{ url('/instructor/evidencias/activar/'.$evidencia->idEvidencia_ficha) }}" class="badge badge-danger">Activar</a></td>
 					                  @elseif ($evidencia->estadoEvidenciaFi === 1)

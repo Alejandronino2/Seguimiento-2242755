@@ -14,7 +14,7 @@
                         <div class="input-group">
                           <input type="text" class="form-control" placeholder="Buscar" name="texto" value="{{$texto}}">
                           <div class="input-group-btn">
-                            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
                           </div>
                         </div>
                       </form>
@@ -44,7 +44,7 @@
                             @else
                             @foreach ($result as $fichas)
                             <tr>
-                                <td><a href="{{ url('/coordinador/proyectos/'.$fichas->idFicha) }}" class="btn btn-outline-primary">{{ $fichas->ficha }}</a></td>
+                                <td><a href="{{ url('/coordinador/proyectos/'.$fichas->idFicha) }}" class="btn btn-success">{{ $fichas->ficha }}</a></td>
                                 <td>{{ $fichas->fechaInicio }}</td>
                                 <td>{{ $fichas->fechaFin }}</td>
                                 <td>{{ $fichas->nombrePrograma }}</td>

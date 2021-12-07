@@ -30,13 +30,7 @@
       <div class="navbar-bg"></div>
       <nav class="navbar navbar-expand-lg main-navbar sticky">
         <div class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
-									collapse-btn"> <i data-feather="align-justify"></i></a></li>
-            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                <i data-feather="maximize"></i>
-              </a></li>
-          </ul>
+        <button type="button" class="btn btn-light">Bienvenido Aprendiz</button>
         </div> 
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown"
@@ -69,22 +63,22 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Menu</li>
-            <li class="dropdown">
-              <a href="{{ url('aprendiz/proyecto') }}" class="nav-link"><i data-feather="monitor"></i><span>Proyecto</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Evidencias</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{ url('aprendiz/evidencias/'.$result[0]->idFichaFK.'/'.$result[0]->idAprendiz) }}">Evidencias</a></li>
-                <li><a class="nav-link" href="{{ url('evidencias/proyecto/'.$result[0]->idAprendiz) }}">Evidencias del Proyecto</a></li>
-               </ul>
-            </li> 
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="file-plus"></i><span>Avances</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{ url('aprendiz/verAvances/'.$result[0]->idProyecto) }}">Lista Avances</a></li>
-              </ul>
-            </li>
+            <h5 class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Proyectos</span></h5>
+              <li><a href="{{ url('aprendiz/proyecto') }}"  class="nav-link"><span>-Proyecto</span></a></li>
+     
+         
+              <h5 class="menu-toggle nav-link has-dropdown toggled"><i data-feather="briefcase"></i><span>Evidencias</span></h5>
+              
+                <li><a class="nav-link" href="{{ url('aprendiz/evidencias/'.$result[0]->idFichaFK.'/'.$result[0]->idAprendiz) }}">-Evidencias</a></>
+                <li><a class="nav-link" href="{{ url('evidencias/proyecto/'.$result[0]->idAprendiz) }}">-Evidencias del Proyecto</a></li>
+              
+           
+            
+              <h5 class="menu-toggle nav-link has-dropdown"><i data-feather="file-text"></i><span>Avances</span></h5>
+              
+                <li><a class="nav-link" href="{{ url('aprendiz/verAvances/'.$result[0]->idProyecto) }}">-Lista Avances</a></li>
+              
+           
           </ul>
         </aside>
       </div>

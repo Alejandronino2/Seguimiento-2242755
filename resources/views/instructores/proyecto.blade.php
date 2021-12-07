@@ -13,9 +13,9 @@
 				  <div class="card-header">
           <form action="/proyecto/desintegrar/{{$result[1]->idProyecto}}" method="post" class="borrarF">
             @csrf
-            <button type="button" class="btn btn-primary m-3 eliminar-evi" title="Eliminar" onClick="confirmar(event,this)">Desintegrar Proyecto</button>
+            <button type="button" class="btn btn-danger" title="Eliminar" onClick="confirmar(event,this)">Desintegrar Proyecto</button>
           </form>
-		            <a type="button" class="btn btn-primary m-3" href="{{ url('instructor/proyecto/evidencias/'.$result[1]->idProyecto) }}">Evidencias Proyecto</a><br/>
+		            <a type="button" class="btn btn-success" href="{{ url('instructor/proyecto/evidencias/'.$result[1]->idProyecto) }}">Evidencias Proyecto</a><br/>
 		            <a type="button" class="btn btn-primary m-3" href="{{ url('instructor/proyecto/'.$result[1]->idFicha.'/nuevo/'.$result[1]->idProyecto) }}">Añadir Aprendiz</a><br/>
                   </div>
                   <div class="card-body">
@@ -29,7 +29,7 @@
                         <div class="media-cta">
                         <form action="/aprendizP/borrar/{{$proyec->idAprendiz_proyectos}}" method="post" class="borrarF">
                         @csrf
-                        <a type="button" class="btn btn-outline-primary eliminar-evi" title="Eliminar" onClick="confirmarApre(event,this)">Eliminar Aprendiz</a>
+                        <a type="button" class="btn btn-danger" title="Eliminar" onClick="confirmarApre(event,this)">Eliminar Aprendiz</a>
                         </form>
                         </div>
                       </li><br/>
@@ -48,11 +48,11 @@
  function confirmar(event, boton){
   event.preventDefault()
         Swal.fire({
-        title: 'Estas seguro?',
+        title: '¿Estas seguro?',
         text: "No podrás reestablecer este grupo",
         type: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor : '#54ca68',
         cancelButtonColor: '#d33',
         cancelButtonText: 'Cancelar',
         confirmButtonText: 'Desintegrar'
@@ -67,11 +67,11 @@
     function confirmarApre(event, boton){
   event.preventDefault()
         Swal.fire({
-        title: 'Estas seguro?',
-        text: "No podrás reestablecer a este aprendiz",
+        title: '¿Esta seguro?',
+        text: "El aprendiz sera eliminado del proyecto",
         type: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor: '#54ca68',
         cancelButtonColor: '#d33',
         cancelButtonText: 'Cancelar',
         confirmButtonText: 'Borrar'
