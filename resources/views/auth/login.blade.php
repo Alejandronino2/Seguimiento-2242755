@@ -31,10 +31,9 @@
   <img src="{{ asset('./assets/css/IMG/senalogo.png') }}">
   </div>
   <br>
-  <center><h1 class="display-5">Listo para dar otro paso</h1></center>
-                        @if (Route::has('password.request'))
-                            <a class="signup-image-link" href="{{ route('password.request') }}">{{ __('Olvidaste tu Contraseña') }}</a>
-                        @endif
+  <center><h1 class="display-5">Listo para dar tu Primer</h1></center>
+  <center><h1 class="display-5">AVANZER</h1></center>
+                        
                       
                     </div>
 
@@ -43,7 +42,7 @@
                         <form method="POST" action="{{ route('login') }}" class="register-form" id="login-form">
                         @csrf
                             <div class="form-group">
-                                <label for="email"><i class="fas fa-user"></i></label>
+                                <label for="email"><i class="fas fa-envelope"></i></label>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Tu Correo">
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -52,17 +51,22 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="password"><i class="fas fa-unlock-alt"></i></label>
+                                <label for="password"><i class="fas fa-lock"></i></i></label>
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Tu Contraseña">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+<center>
                             </div>
+                            @if (Route::has('password.request'))
+                            <a class="signup-image-link" href="{{ route('password.request') }}">{{ __('Olvidaste tu Contraseña') }}</a>
+                        @endif
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Ingresar"/>
+                                <center><input type="submit" name="signin" id="signin" class="form-submit" value="Ingresar"/> </center>
                             </div>
+</center>
                         </form>
                     </div>
                 </div>

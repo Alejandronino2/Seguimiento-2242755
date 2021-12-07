@@ -33,11 +33,11 @@
          
         </div>
         <ul class="navbar-nav navbar-right">
+        <h4 class="btn btn-dark">Coordinador</h4>
           <li class="dropdown"><a href="#" data-toggle="dropdown"
               class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="{{ asset('./assets/img/persona.jpg') }}"
                 class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title">Hola Coordinador</div>
               <a href="{{'/coordinador/perfil'}}" class="dropdown-item has-icon"> <i class="far fa-user"></i>
                 Perfil
                 </a>
@@ -57,7 +57,7 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="#"> <img alt="image" src="{{ asset('./assets/img/logo2.png') }}" class="header-logo" /> <span
+            <a href="#"> <img alt="image" src="{{ asset('./assets/css/IMG/senalogo.png') }}" class="header-logo" /> <span
                 class="logo-name">Avanzer</span>
             </a>
           </div>

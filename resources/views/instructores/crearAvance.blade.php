@@ -8,7 +8,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Crear Avance</h4>
+                    <h4>Lista de Avances</h4>
                   </div>
 				  <div class="card-header">
                     <h4>Seleccione una evidencia</h4>
@@ -27,7 +27,7 @@
                           <tr>
 						    <th>Proyecto</th>
 				            <th>Evidencia</th>
-				            <th>Avance</th>
+				            <th>Comentario</th>
                         </thead>
                         <tbody>
                         @if(count($result[1])<=0)

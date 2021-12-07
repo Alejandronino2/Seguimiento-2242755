@@ -34,6 +34,7 @@
            </ul>
         </div>
         <ul class="navbar-nav navbar-right">
+        <h4 class="btn btn-dark">Instructor</h4>
           <li class="dropdown"><a href="#" data-toggle="dropdown"
               class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="{{ asset('./assets/img/persona.jpg') }}"
                 class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
@@ -58,8 +59,8 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="#"> <img alt="image" src="{{ asset('./assets/img/logo2.png') }}" class="header-logo" /> <span
-                class="logo-name">Avanzer</span>
+            <a href="#"> <img alt="image" src="{{ asset('./assets/css/IMG/senalogo.png') }}" class="header-logo" /> <span
+                class="logo-name"></span>
             </a>
           </div>
           <ul class="sidebar-menu">
